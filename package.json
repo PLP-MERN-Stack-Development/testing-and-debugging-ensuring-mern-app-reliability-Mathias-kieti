@@ -1,0 +1,13 @@
+{
+  "name": "mern-testing",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "cd server && npm install && cd ../client && npm install",
+    "start:server": "node server/src/server.js",
+    "test:server": "cd server && npm test",
+    "test:client": "cd client && npm test --silent",
+    "cypress:open": "cd client && npx cypress open",
+    "zip": "node -e \"require('child_process').execSync('zip -r mern-testing.zip .', {cwd:'.'})\""
+  }
+}

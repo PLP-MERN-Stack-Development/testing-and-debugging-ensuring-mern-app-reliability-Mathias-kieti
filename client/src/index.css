@@ -1,0 +1,165 @@
+/* ------------------------------
+   Global Reset
+--------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f7f7f7;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ------------------------------
+   Layout
+--------------------------------*/
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+/* ------------------------------
+   Navbar
+--------------------------------*/
+.navbar {
+  background: #222;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  opacity: 0.8;
+}
+
+/* ------------------------------
+   Auth Forms
+--------------------------------*/
+.form-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 3rem;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+  margin-bottom: 1rem;
+  font-size: 24px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 0.9rem;
+  margin: 0.7rem 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #333;
+}
+
+/* ------------------------------
+   Buttons
+--------------------------------*/
+button {
+  width: 100%;
+  padding: 0.9rem;
+  font-size: 16px;
+  border: none;
+  background: #222;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #000;
+}
+
+/* ------------------------------
+   Posts
+--------------------------------*/
+.post-card {
+  background: white;
+  padding: 1.5rem;
+  margin: 1.2rem 0;
+  border-radius: 8px;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.08);
+}
+
+.post-card h3 {
+  font-size: 22px;
+  margin-bottom: 0.6rem;
+}
+
+.post-card p {
+  margin: 0.5rem 0 1rem 0;
+  color: #444;
+}
+
+.post-info {
+  font-size: 14px;
+  color: #666;
+  margin-top: 1rem;
+}
+
+/* Edit/Delete buttons */
+.post-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 1rem;
+}
+
+.edit-btn {
+  background: #007bff;
+}
+
+.edit-btn:hover {
+  background: #0057c4;
+}
+
+.delete-btn {
+  background: #d9534f;
+}
+
+.delete-btn:hover {
+  background: #b92c28;
+}
+
+/* ------------------------------
+   Create new post
+--------------------------------*/
+textarea {
+  width: 100%;
+  padding: 1rem;
+  height: 180px;
+  resize: none;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #333;
+}
